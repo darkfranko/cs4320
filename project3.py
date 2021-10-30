@@ -27,7 +27,8 @@ while check == True:
         my_date = datetime.strptime(my_string_start_date , "%Y-%m-%d")
         my_string_end_date = str(input('Enter end date(YYYY-MM-DD): '))
         my_date = datetime.strptime(my_string_end_date, "%Y-%m-%d")
-
+        
+        # Not sure where I went wrong. I would appreciate feedback please! => Francesko Saliaj
         # Error Check:
         if (my_string_end_date<my_string_start_date):
             raise ValueError("You have an incorrect date range, please try again: ")
