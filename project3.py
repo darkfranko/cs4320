@@ -24,6 +24,7 @@ while check == True:
         print("\nSelect the Time Series of the chart you want to Generate\n--------------------------------------------------------\n1. Intraday\n2. Daily\n3. Weekly\n4. Monthly\n")
         tsInput = int(input ("Enter the Time Series option(1,2,3,4): "))
         # An input is requested and stored in a variable for what Start & End date they want to use.
+<<<<<<< HEAD
         my_string_start_date = input('Enter start date(YYYY-MM-DD): ')
         my_date1 = datetime.strptime(my_string_start_date , "%Y-%m-%d")
         my_string_end_date = input('Enter end date(YYYY-MM-DD): ')
@@ -31,6 +32,14 @@ while check == True:
         d0 = str(my_date1)
         d1 = str(my_date2)
         # ****** Idk where I went wrong with my code. => Francesko Saliaj ******
+=======
+        my_string_start_date = str(input('Enter start date(YYYY-MM-DD): '))
+        my_date = datetime.strptime(my_string_start_date , "%Y-%m-%d")
+        my_string_end_date = str(input('Enter end date(YYYY-MM-DD): '))
+        my_date = datetime.strptime(my_string_end_date, "%Y-%m-%d")
+        
+        # Not sure where I went wrong. I would appreciate feedback please! => Francesko Saliaj
+>>>>>>> ba740f92f8aa34d9c99791fd4f48ba767465ec82
         # Error Check:
         if (my_string_end_date<my_string_start_date):
             raise ValueError("You have an incorrect date range, please try again: ")
