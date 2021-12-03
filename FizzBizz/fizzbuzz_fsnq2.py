@@ -1,5 +1,6 @@
 # fsnq2
 # francesko saliaj
+#
 for fizzbuzz in range(100):
     if fizzbuzz % 3 == 0 and fizzbuzz % 5 == 0:
         print("fizzbuzz")
